@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Science Project</title>
+    <link rel='stylesheet' href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+<div class="image">
+        <h1>Zomato Restaurant Rating Prediction</h1>
+        <form action="/predict" class="container" method="POST">
+            <label for="order"><b>Order</b></label><br>
+            <input type="text" name="order" placeholder="Online order" required="required"/><br>
+            <label for="book"><b>Table Booking</b></label><br>
+            <input type="text" name="book_table" placeholder="Book table" required="required" /><br>
+            <label for="votes"><b>Votes</b></label><br>
+            <input type="text" name="votes" placeholder="Votes" required="required" /><br>
+            <label for="location"><b>location</b></label><br>
+            <input type="text" name="location" placeholder="Location" required="required" /><br>
+            <label for="type1"><b>Restaurant Type</b></label><br>
+            <input type="text" name="res_type" placeholder="Restaurant Type" required="required" /><br>
+            <label for="cuisines"><b>Cuisines</b></label><br>
+            <input type="text" name="cuisines" placeholder="Cuisines" required="required" /><br>
+            <label for="cost"><b>Cost</b></label><br>
+            <input type="text" name="cost" placeholder="Cost" required="required" /><br>
+            <label for="type2"><b>Dinner Type</b></label><br>
+            <input type="text" name="dinner_type" placeholder="Dinner Type" required="required" /><br>
+            <label for="city"><b>City</b></label><br>
+            <input type="text" name="city" placeholder="City" required="required" /><br><br>
+            <div class='wrapper'>
+              <button type="submit" class="btn">Predict</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

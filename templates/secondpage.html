@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Data Science Project</title>
+    <link rel='stylesheet' href="{{ url_for('static',filename='style.css') }}">
+</head>
+<body>
+<div>
+        <h1>Thank You For Using The Prediction Model</h1>
+        <form>
+            {% block body %}
+            <label>The rating is {{ value }}</label>
+            {% endblock %}
+
+            <br><br>
+            <label>Want to predict again?</label><b>
+            <a href="/">click here</a>
+        </form>
+    </div>
+</body>
+</html>
